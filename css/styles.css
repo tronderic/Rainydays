@@ -10,7 +10,28 @@ h1, h2, h3 {
 
 p, main ul {
 font-family: 'Open Sans', sans-serif;
-]
+}
+
+.logo {
+  display: flex; justify-content: center;
+}
+
+.icon {
+  display: flex; justify-content: right;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.nav {
+  display: flex; justify-content: center;
+}
+
 footer {
   background-color: #0A3641;
   text-align: right;
