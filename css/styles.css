@@ -9,7 +9,7 @@ h1, h2, h3 {
 }
 
 p, main ul {
-font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .container {
@@ -35,13 +35,21 @@ font-family: 'Open Sans', sans-serif;
   grid-column: 5 / 6;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-evenly;
-  list-style-type: none;
+nav{
+  text-align: center;
 }
 
-.nav-item {
+nav li {
+  display: inline-block;
+  padding: 0px 50px;
+  font-size: 2em;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+nav a {
   text-decoration: none;
 }
 
