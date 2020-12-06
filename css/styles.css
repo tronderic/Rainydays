@@ -4,15 +4,20 @@ nav a {
 }
 
 h1, h2, h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;  
   color: #0A3641
 }
 
-p, main ul {
+h3, p, main ul {
+  color: #707070;
+}
+
+p, main ul, .cta {
   font-family: 'Open Sans', sans-serif;
 }
 
 .container {
+  padding-top: 20px;
   display: grid;
   grid-template-columns: 20%  auto 5% 5% 5% 5%;
   grid-template-rows:  auto;
@@ -46,10 +51,10 @@ nav li {
 }
 
 nav ul {
-  padding: 0px;
+  padding-top: 40px;
 }
 
-nav a {
+a {
   text-decoration: none;
 }
 
@@ -57,6 +62,55 @@ hr {
   width: 100%;
   height: 0.05em;
   background-color: #0A3641;
+}
+
+.gender{
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.gender h1 {
+  color: #ffffff;
+  text-align: center;
+}
+
+.men {
+  background-image: url("../images/men.jpg");
+  background-repeat: no-repeat;
+  height: 498px;
+  width: 759px;
+}
+
+.women {
+  background-image: url("../images/women.jpg");
+  background-repeat: no-repeat;
+  height: 498px;
+  width: 759px;
+}
+
+.header-pop {
+  padding: 100px 0px 20px 122px;
+  font-size: 2em;
+}
+
+.popular-items {
+  padding: 0px 12px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.popular-items div {
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.cta {
+  background-color: #64C253;
+  color: #0A3641;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 30px;
 }
 
 footer {
