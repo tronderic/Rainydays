@@ -113,6 +113,17 @@ hr {
   border-radius: 30px;
 }
 
+.products {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows:  auto auto auto;
+}
+
+.product {
+  text-align: center;
+  padding: 30px 0;
+}
+
 footer {
   display: flex;
   justify-content: center;
