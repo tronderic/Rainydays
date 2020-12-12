@@ -45,32 +45,51 @@
     </header>
     <main>
       <h1>Checkout</h1>
-      <h4>New Customer</h4>
-      <form action="checkout-success.html" method="GET">
-        <label for="first-name">First Name</label>
-        <input type="text" name="first-name" id="first-name" />
-        <label for="last-name">Last Name</label>
-        <input type="text" name="last-name" id="last-name" />
-        <label for="adress">Adress</label>
-        <input type="text" name="adress" id="adress" />
-        <label for="city">City</label>
-        <input type="text" name="city" id="city" />
-        <label for="zip">Post Code</label>
-        <input type="text" name="zip" id="zip" />
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" />
-        <label for="password">New Password</label>
-        <input type="text" name="password" id="password" />
-        <input type="submit" value="Complete Order" class="cta" />
-      </form>
-      <h4>Returning Customer</h4>
-      <form action="login.html" method="GET">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" />
-        <label for="password">Password</label>
-        <input type="text" name="password" id="password" />
-        <input type="submit" value="Log In" class="cta" />
-      </form>
+      <div class="checkout">
+        <img src="images/checkout.jpg" alt="product item" class="item" />
+        <p>Item</p>
+        <p>Size</p>
+        <p>Quantity</p>
+        <p>Price</p>
+        <p class="item1">Down Jacket</p>
+        <p class="item2">M</p>
+        <p class="item3">1</p>
+        <p class="item4">$ 52,90</p>
+      </div>
+      <p>Shipping $ 6,99</p>
+      <p>Total $ 59,89</p>
+      <div>
+        <div class="new-customer">
+          <h4>New Customer</h4>
+          <form action="checkout-success.html" method="GET">
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name" />
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" id="last-name" />
+            <label for="adress">Adress</label>
+            <input type="text" name="adress" id="adress" />
+            <label for="city">City</label>
+            <input type="text" name="city" id="city" />
+            <label for="zip">Post Code</label>
+            <input type="text" name="zip" id="zip" />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+            <label for="password">New Password</label>
+            <input type="text" name="password" id="password" />
+            <input type="submit" value="Complete Order" class="cta" />
+          </form>
+        </div>
+        <div class="returning-customer">
+          <h4>Returning Customer</h4>
+          <form action="login.html" method="GET">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+            <label for="password">Password</label>
+            <input type="text" name="password" id="password" />
+            <input type="submit" value="Log In" class="cta" />
+          </form>
+        </div>
+      </div>
       <a href="product-page.html" class="cta">Back</a>
     </main>
     <footer>
