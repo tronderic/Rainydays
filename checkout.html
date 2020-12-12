@@ -45,7 +45,8 @@
     </header>
     <main>
       <h1>Checkout</h1>
-      <form action="form-contact.php" method="GET">
+      <h4>New Customer</h4>
+      <form action="checkout-success.html" method="GET">
         <label for="first-name">First Name</label>
         <input type="text" name="first-name" id="first-name" />
         <label for="last-name">Last Name</label>
@@ -60,9 +61,16 @@
         <input type="email" name="email" id="email" />
         <label for="password">New Password</label>
         <input type="text" name="password" id="password" />
+        <input type="submit" value="Complete Order" class="cta" />
       </form>
-      <a href="login.html" class="cta">Log In</a>
-      <a href="checkout-success.html" class="cta">Complete Order</a>
+      <h4>Returning Customer</h4>
+      <form action="login.html" method="GET">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+        <label for="password">Password</label>
+        <input type="text" name="password" id="password" />
+        <input type="submit" value="Log In" class="cta" />
+      </form>
       <a href="product-page.html" class="cta">Back</a>
     </main>
     <footer>
