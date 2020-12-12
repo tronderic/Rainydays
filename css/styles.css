@@ -1,26 +1,33 @@
 nav a {
-  font-family: 'Roboto Condensed', sans-serif;
-  color: #0A3641
+  font-family: "Roboto Condensed", sans-serif;
+  color: #0a3641;
 }
 
-h1, h2, h3 {
-  font-family: 'Roboto', sans-serif;  
-  color: #0A3641
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+  color: #0a3641;
 }
 
-h3, p, main ul {
+h3,
+p,
+main ul {
   color: #707070;
 }
 
-p, main ul, .cta {
-  font-family: 'Open Sans', sans-serif;
+p,
+main ul,
+.cta,
+label {
+  font-family: "Open Sans", sans-serif;
 }
 
 .container {
   padding-top: 20px;
   display: grid;
-  grid-template-columns: 20%  auto 5% 5% 5% 5%;
-  grid-template-rows:  auto;
+  grid-template-columns: 20% auto 5% 5% 5% 5%;
+  grid-template-rows: auto;
 }
 
 .grid-item1 {
@@ -40,7 +47,7 @@ p, main ul, .cta {
   grid-column: 5 / 6;
 }
 
-nav{
+nav {
   text-align: center;
 }
 
@@ -61,10 +68,10 @@ a {
 hr {
   width: 100%;
   height: 0.05em;
-  background-color: #0A3641;
+  background-color: #0a3641;
 }
 
-.gender{
+.gender {
   padding-top: 50px;
   display: flex;
   justify-content: space-evenly;
@@ -106,8 +113,8 @@ hr {
 }
 
 .cta {
-  background-color: #64C253;
-  color: #0A3641;
+  background-color: #64c253;
+  color: #0a3641;
   font-weight: bold;
   padding: 10px 30px;
   border-radius: 30px;
@@ -116,7 +123,7 @@ hr {
 .products {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-template-rows:  auto auto auto;
+  grid-template-rows: auto auto auto;
 }
 
 .product {
@@ -127,7 +134,7 @@ hr {
 footer {
   display: flex;
   justify-content: center;
-  background-color: #0A3641;
+  background-color: #0a3641;
 }
 
 .footer {

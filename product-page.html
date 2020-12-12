@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pushing the Comfort Zone">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Pushing the Comfort Zone" />
     <title>RainyDays | Product-page</title>
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
     <header>
       <div class="container">
-        <a href="index.html" class="grid-item1"><img src="images/rainydays-logo.png" alt="Logo" size="width 401" height="216"></a>
-        <a href="contact.html" class="grid-item2"><img src="icon/contact.png" alt="Contact"></a>
-        <a href="login.html" class="grid-item3"><img src="icon/login.png" alt="Log In"></a>
-        <a href="checkout.html" class="grid-item4"><img src="icon/checkout.png" alt="Cart"></a>
+        <a href="index.html" class="grid-item1"
+          ><img
+            src="images/rainydays-logo.png"
+            alt="Logo"
+            size="width 401"
+            height="216"
+        /></a>
+        <a href="contact.html" class="grid-item2"
+          ><img src="icon/contact.png" alt="Contact"
+        /></a>
+        <a href="login.html" class="grid-item3"
+          ><img src="icon/login.png" alt="Log In"
+        /></a>
+        <a href="checkout.html" class="grid-item4"
+          ><img src="icon/checkout.png" alt="Cart"
+        /></a>
       </div>
       <nav>
         <ul>
@@ -26,27 +41,33 @@
           <li><a href="about.html">About Us</a></li>
         </ul>
       </nav>
-      <hr>
+      <hr />
     </header>
     <main>
-      <img src="images/product.jpg" alt="Jacket">
+      <img src="images/product.jpg" alt="Jacket" />
       <h1>Down Jacket</h1>
-      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores</p>
+      <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua. At vero eos et accusam et justo duo dolores
+      </p>
       <p>$52,90</p>
-      <P>Size</P>
-      <ul>
-        <li>S</li>
-        <li>M</li>
-        <li>L</li>
-      </ul>
-      <a href="checkout.html" class="cta">Add to Cart</a>
+      <form action="checkout.html" method="GET">
+        <input type="radio" name="size" value="s" id="s" />
+        <label for="s">S</label>
+        <input type="radio" name="size" value="m" id="m" />
+        <label for="m">M</label>
+        <input type="radio" name="size" value="l" id="l" />
+        <label for="l">L</label>
+        <input type="submit" value="Add to cart" class="cta" />
+      </form>
       <a href="products.html" class="cta">Back</a>
     </main>
     <footer>
-      <img src="icon/facebook.png" alt="Facebook" class="footer">
-      <img src="icon/instagram.png" alt="Instagram" class="footer">
-      <img src="icon/twitter.png" alt="Twitter" class="footer">
-      <img src="icon/youtube.png" alt="Youtube" class="footer">
+      <img src="icon/facebook.png" alt="Facebook" class="footer" />
+      <img src="icon/instagram.png" alt="Instagram" class="footer" />
+      <img src="icon/twitter.png" alt="Twitter" class="footer" />
+      <img src="icon/youtube.png" alt="Youtube" class="footer" />
     </footer>
   </body>
 </html>
