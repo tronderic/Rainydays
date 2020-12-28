@@ -1,3 +1,5 @@
+/* fonts and color */
+
 nav a {
   font-family: "Roboto Condensed", sans-serif;
   color: #0a3641;
@@ -23,7 +25,9 @@ label {
   font-family: "Open Sans", sans-serif;
 }
 
-.container {
+/* header and nav */
+
+.header {
   padding-top: 20px;
   display: grid;
   grid-template-columns: 20% auto 5% 5% 5% 5%;
@@ -71,6 +75,30 @@ hr {
   background-color: #0a3641;
 }
 
+/* cta */
+
+.cta {
+  background-color: #64c253;
+  color: #0a3641;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #0a3641;
+}
+
+.footer-icon {
+  padding: 20px;
+}
+
+/* index.html */
+
 .gender {
   padding-top: 50px;
   display: flex;
@@ -79,6 +107,7 @@ hr {
 
 .gender h1 {
   color: #ffffff;
+  position: relative;
   text-align: center;
 }
 
@@ -96,7 +125,7 @@ hr {
   width: 759px;
 }
 
-.header-pop {
+.header-popular {
   padding: 100px 0px 20px 122px;
   font-size: 2em;
 }
@@ -112,13 +141,7 @@ hr {
   padding-bottom: 100px;
 }
 
-.cta {
-  background-color: #64c253;
-  color: #0a3641;
-  font-weight: bold;
-  padding: 10px 30px;
-  border-radius: 30px;
-}
+/* products.html */
 
 .products {
   display: grid;
@@ -130,6 +153,8 @@ hr {
   text-align: center;
   padding: 30px 0;
 }
+
+/* checkout.html */
 
 .checkout {
   display: grid;
@@ -161,14 +186,4 @@ hr {
 .item4 {
   grid-column: 5;
   grid-row: 2;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  background-color: #0a3641;
-}
-
-.footer {
-  padding: 20px;
 }
