@@ -81,9 +81,6 @@ footer {
 
 /* index.html */
 
-.gender {
-}
-
 .gender h1 {
   color: #ffffff;
   font-size: 2em;
@@ -95,8 +92,7 @@ footer {
 .men {
   background-image: url("../images/men.jpg");
   background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y; center;
+  background-size: cover;
   height: 180px;
   width: 300px;
   margin: 0px auto;
@@ -105,8 +101,7 @@ footer {
 .women {
   background-image: url("../images/women.jpg");
   background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y; center;
+  background-size: cover;
   height: 180px;
   width: 300px;
   margin: 0px auto;
