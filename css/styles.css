@@ -61,6 +61,7 @@ label {
 nav {
   display: none;
   position: fixed;
+  top: 220px;
   background-color: white;
   font-size: 1.8em;
   z-index: 1000;
