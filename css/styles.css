@@ -44,6 +44,11 @@ label {
   padding: 20px;
 }
 
+.hamburger-menu {
+  position: relative;
+  top: 8px;
+}
+
 #hamburger-menu {
   display: none;
   padding-top: 40px;
