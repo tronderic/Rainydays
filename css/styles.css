@@ -159,7 +159,8 @@ footer {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto auto auto auto;
-  gap: 10px;
+  gap: 20px;
+  margin: 0px auto;
 }
 
 .product img {
@@ -168,7 +169,12 @@ footer {
 
 .product {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
+}
+
+.cta-products {
+  text-align: center;
+  padding: 50px;
 }
 
 /* checkout.html */
@@ -256,6 +262,12 @@ footer {
   .login-cta {
     display: none;
   }
+
+  .products {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    padding: 20px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -329,5 +341,12 @@ footer {
   .cta {
     font-size: 1em;
     padding: 10px 30px;
+  }
+
+  .products {
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 50px;
+    padding: 0px 50px 50px 50px;
   }
 }
