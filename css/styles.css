@@ -285,6 +285,7 @@ footer {
   nav {
     display: block;
     position: relative;
+    top: auto;
     text-align: center;
     z-index: unset;
   }
