@@ -151,13 +151,18 @@ footer {
 
 .products {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
+  gap: 10px;
+}
+
+.product img {
+  width: 100%;
 }
 
 .product {
   text-align: center;
-  padding: 30px 0;
+  padding-bottom: 30px;
 }
 
 /* checkout.html */
