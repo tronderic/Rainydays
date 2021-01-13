@@ -123,7 +123,12 @@ footer {
 
 /* index.html */
 
-.gender h1 {
+.main-title {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.gender h2 {
   color: #ffffff;
   font-size: 2em;
   position: relative;
@@ -230,7 +235,7 @@ footer {
     margin: 0px 10px;
   }
 
-  .gender h1 {
+  .gender h2 {
     top: 150px;
   }
 
@@ -285,6 +290,10 @@ footer {
 @media (min-width: 1200px) {
   /* index.html */
 
+  .main-title {
+    font-size: 2em;
+  }
+
   .logo-grid {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -322,7 +331,7 @@ footer {
     display: inline-block;
   }
 
-  .gender h1 {
+  .gender h2 {
     top: 200px;
   }
 
