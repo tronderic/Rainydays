@@ -1,0 +1,34 @@
+.main-title {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.gender h2 {
+  color: #ffffff;
+  font-size: 2em;
+  position: relative;
+  top: 120px;
+  text-align: center;
+}
+
+.men {
+  background-image: url("../images/men.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 180px;
+  width: 300px;
+  margin: 0px auto;
+}
+
+.women {
+  background-image: url("../images/women.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 180px;
+  width: 300px;
+  margin: 0px auto;
+}
+
+.featured {
+  display: none;
+}

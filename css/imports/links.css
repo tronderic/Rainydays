@@ -1,0 +1,20 @@
+/* cta */
+
+.login-cta {
+  text-align: center;
+  margin: 40px;
+}
+
+.cta {
+  background-color: #64c253;
+  color: #0a3641;
+  font-weight: bold;
+  font-size: 0.8em;
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+
+.cta-large {
+  padding: 15px 70px;
+  font-size: 1.2em;
+}
