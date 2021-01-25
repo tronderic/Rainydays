@@ -21,4 +21,9 @@
 
 .cta-size {
   background-color: #c2774a;
+  color: #0a3641;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 4px 40px;
+  border-radius: 30px;
 }
