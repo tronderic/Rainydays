@@ -1,0 +1,22 @@
+main {
+  display: flex;
+  flex: 1fr 1fr;
+}
+
+#s,
+#m,
+#l {
+  display: none;
+}
+
+#s:checked ~ .s {
+  background-color: #c14a40;
+}
+
+#m:checked ~ .m {
+  background-color: #c14a40;
+}
+
+#l:checked ~ .l {
+  background-color: #c14a40;
+}
