@@ -2,6 +2,16 @@ main img {
   width: 100%;
 }
 
+.product--main {
+  margin: 0px auto;
+}
+
+.product-image,
+.product-details {
+  max-width: 500px;
+  margin: 0px auto;
+}
+
 .product-details form {
   padding: 10px 0px 50px 0px;
 }
