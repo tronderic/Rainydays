@@ -1,0 +1,18 @@
+h1 {
+  text-align: center;
+}
+
+p {
+  padding: 20px 0px;
+  max-width: 500px;
+  margin: 0px auto;
+}
+
+main div {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.cta {
+  margin: 0px 20px;
+}
