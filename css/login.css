@@ -1,0 +1,18 @@
+main {
+  margin: 0px auto;
+}
+
+h1,
+main div {
+  text-align: center;
+}
+
+.form-login {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 50px;
+}
+
+.cta {
+  margin: 0px 20px;
+}
