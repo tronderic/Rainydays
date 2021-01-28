@@ -86,6 +86,17 @@
     max-width: 600px;
     margin: 0px;
   }
+
+  /* contact.html */
+
+  .contact-container {
+    display: flex;
+    gap: 40px;
+  }
+
+  .cta-contact {
+    padding-top: 50px;
+  }
 }
 
 @media (min-width: 1200px) {
