@@ -110,3 +110,10 @@ footer {
   padding: 20px;
   width: 1.8em;
 }
+
+footer p {
+  padding: 0px;
+  margin: 0px;
+  align-self: center;
+  color: white;
+}
