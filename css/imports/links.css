@@ -1,4 +1,6 @@
-/* cta */
+.current {
+  text-decoration: underline;
+}
 
 .login-cta {
   text-align: center;
