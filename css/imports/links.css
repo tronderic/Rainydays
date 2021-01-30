@@ -9,7 +9,7 @@
 
 .cta {
   background-color: #64c253;
-  color: #0a3641;
+  color: var(--color-main-blue);
   font-weight: bold;
   font-size: 0.8em;
   padding: 10px 30px;
@@ -23,7 +23,7 @@
 
 .cta-size {
   background-color: #c2774a;
-  color: #0a3641;
+  color: var(--color-main-blue);
   font-weight: bold;
   font-size: 1em;
   padding: 4px 40px;

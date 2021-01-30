@@ -23,7 +23,7 @@ main img {
 
 .price {
   font-size: 1.5em;
-  color: #0a3641;
+  color: var(--color-main-blue);
 }
 
 .size,

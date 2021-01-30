@@ -4,28 +4,28 @@
 /* fonts and color */
 
 nav a {
-  font-family: "Roboto Condensed", sans-serif;
-  color: #0a3641;
+  font-family: var(--text-nav);
+  color: var(--color-main-blue);
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Roboto", sans-serif;
-  color: #0a3641;
+  font-family: var(--text-heading);
+  color: var(--color-main-blue);
 }
 
 h3,
 p,
 main ul {
-  color: #707070;
+  color: var(--color-text-grey);
 }
 
 p,
 main ul,
 .cta,
 label {
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--text-p-cta);
 }
 
 /* body */
@@ -94,7 +94,7 @@ a {
 hr {
   width: 100%;
   height: 0.05em;
-  background-color: #0a3641;
+  background-color: var(--color-main-blue);
   margin: 20px 0px;
 }
 
@@ -103,7 +103,7 @@ hr {
 footer {
   display: flex;
   justify-content: center;
-  background-color: #0a3641;
+  background-color: var(--color-main-blue);
 }
 
 .footer-icon {
