@@ -29,3 +29,22 @@
   grid-column: 5;
   grid-row: 2;
 }
+
+.new-customer,
+.returning-customer {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  max-width: 350px;
+  margin: 0px auto;
+}
+
+.checkout-cta,
+h2 {
+  text-align: center;
+  padding: 50px 0px;
+  margin: 0px;
+}
+
+.login {
+  padding-bottom: 0px;
+}

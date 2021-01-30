@@ -54,19 +54,21 @@
       <p>Shipping $ 6,99</p>
       <p>Total $ 59,89</p>
       <div>
-        <div class="returning-customer">
+        <div>
           <h2>Returning Customer</h2>
-          <form action="login.html" method="GET">
+          <form class="returning-customer">
             <label for="email">Email</label>
             <input type="email" name="email" id="email" />
             <label for="password">Password</label>
             <input type="text" name="password" id="password" />
-            <input type="submit" value="Log In" class="cta" />
           </form>
         </div>
-        <div class="new-customer">
+        <div class="checkout-cta .login">
+          <a href="login.html" class="cta">Log In</a>
+        </div>
+        <div>
           <h2>New Customer</h2>
-          <form action="checkout-success.html" method="GET">
+          <form class="new-customer">
             <label for="first-name">First Name</label>
             <input type="text" name="first-name" id="first-name" />
             <label for="last-name">Last Name</label>
@@ -81,11 +83,13 @@
             <input type="email" name="email" id="email" />
             <label for="password">New Password</label>
             <input type="text" name="password" id="password" />
-            <input type="submit" value="Complete Order" class="cta" />
           </form>
         </div>
       </div>
-      <a href="product-page.html" class="cta">Back</a>
+      <div class="checkout-cta">
+        <a href="checkout-success.html" class="cta">Complete Order</a>
+        <a href="product-page.html" class="cta">Back</a>
+      </div>
     </main>
     <footer>
       <a href="https://www.facebook.com"><img src="icon/facebook.png" alt="Facebook" class="footer-icon" /></a>
