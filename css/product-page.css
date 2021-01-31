@@ -37,14 +37,8 @@ form {
   display: none;
 }
 
-#s:checked ~ .s {
-  background-color: #c14a40;
-}
-
-#m:checked ~ .m {
-  background-color: #c14a40;
-}
-
+#s:checked ~ .s,
+#m:checked ~ .m,
 #l:checked ~ .l {
-  background-color: #c14a40;
+  background: #c14a40;
 }

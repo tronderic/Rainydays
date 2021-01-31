@@ -12,8 +12,7 @@
 }
 
 .men {
-  background-image: url("../images/men.jpg");
-  background-repeat: no-repeat;
+  background: url("../images/men.jpg") no-repeat;
   background-size: cover;
   height: 180px;
   width: 300px;
@@ -21,8 +20,7 @@
 }
 
 .women {
-  background-image: url("../images/women.jpg");
-  background-repeat: no-repeat;
+  background: url("../images/women.jpg") no-repeat;
   background-size: cover;
   height: 180px;
   width: 300px;

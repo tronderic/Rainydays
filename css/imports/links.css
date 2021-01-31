@@ -8,7 +8,7 @@
 }
 
 .cta {
-  background-color: #64c253;
+  background: #64c253;
   color: var(--color-main-blue);
   font-weight: bold;
   font-size: 0.8em;
@@ -22,7 +22,7 @@
 }
 
 .cta-size {
-  background-color: #c2774a;
+  background: #c2774a;
   color: var(--color-main-blue);
   font-weight: bold;
   font-size: 1em;
