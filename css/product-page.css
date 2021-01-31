@@ -40,5 +40,5 @@ form {
 #s:checked ~ .s,
 #m:checked ~ .m,
 #l:checked ~ .l {
-  background: #c14a40;
+  background: var(--color-cta-size-checked);
 }
