@@ -71,9 +71,9 @@ body {
 
 nav {
   display: none;
-  position: fixed;
-  top: 220px;
-  background: white;
+  position: absolute;
+  top: 212px;
+  background: var(--color-nav-mobile);
   font-size: 1.8em;
   z-index: 1000;
 }
