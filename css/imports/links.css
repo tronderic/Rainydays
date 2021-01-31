@@ -23,7 +23,7 @@
 
 .cta-size {
   background: var(--color-cta-size);
-  color: var(--color-main-blue);
+  color: var(--color-cta-size-text);
   font-weight: bold;
   font-size: 1em;
   padding: 4px 40px;
