@@ -96,3 +96,7 @@ h2 {
 form label {
   min-width: 128px;
 }
+
+form input {
+  max-width: 192px;
+}
