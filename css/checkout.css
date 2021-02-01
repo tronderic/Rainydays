@@ -92,3 +92,7 @@ h2 {
   margin: 0px auto;
   padding: 20px;
 }
+
+form label {
+  min-width: 128px;
+}
