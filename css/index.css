@@ -1,32 +1,37 @@
 .main-title {
-  text-align: center;
-  padding-top: 20px;
+    text-align: center;
+    padding-top: 20px;
 }
 
 .gender h2 {
-  color: #ffffff;
-  font-size: 2em;
-  position: relative;
-  top: 120px;
-  text-align: center;
+    color: #ffffff;
+    font-size: 2em;
+    position: relative;
+    top: 120px;
+    text-align: center;
 }
 
 .men {
-  background: url("../images/men.jpg") no-repeat;
-  background-size: cover;
-  height: 180px;
-  width: 300px;
-  margin: 0px auto;
+    background: url("../images/men.jpg") no-repeat;
+    background-size: cover;
+    height: 180px;
+    width: 300px;
+    margin: 0px auto;
+}
+
+.men:hover,
+.women:hover {
+    opacity: 80%;
 }
 
 .women {
-  background: url("../images/women.jpg") no-repeat;
-  background-size: cover;
-  height: 180px;
-  width: 300px;
-  margin: 0px auto;
+    background: url("../images/women.jpg") no-repeat;
+    background-size: cover;
+    height: 180px;
+    width: 300px;
+    margin: 0px auto;
 }
 
 .featured {
-  display: none;
+    display: none;
 }

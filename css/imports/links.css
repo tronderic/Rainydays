@@ -1,31 +1,36 @@
 .current {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .login-cta {
-  text-align: center;
-  margin: 40px;
+    text-align: center;
+    margin: 40px;
 }
 
 .cta {
-  background: var(--color-cta);
-  color: var(--color-main-blue);
-  font-weight: bold;
-  font-size: 0.8em;
-  padding: 10px 30px;
-  border-radius: 30px;
+    background: var(--color-cta);
+    color: var(--color-main-blue);
+    font-weight: bold;
+    font-size: 0.8em;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+.cta:hover {
+    background: darkgreen;
+    color: white;
 }
 
 .cta-large {
-  padding: 15px 70px;
-  font-size: 1.2em;
+    padding: 15px 70px;
+    font-size: 1.2em;
 }
 
 .cta-size {
-  background: var(--color-cta-size);
-  color: var(--color-cta-size-text);
-  font-weight: bold;
-  font-size: 1em;
-  padding: 4px 40px;
-  border-radius: 30px;
+    background: var(--color-cta-size);
+    color: var(--color-cta-size-text);
+    font-weight: bold;
+    font-size: 1em;
+    padding: 4px 40px;
+    border-radius: 30px;
 }
