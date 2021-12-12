@@ -56,15 +56,26 @@
         </header>
         <main>
             <h1>Log In</h1>
-            <form class="form-login">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" />
-                <label for="password">Password</label>
-                <input type="text" name="password" id="password" />
-            </form>
-            <div>
-                <a href="login.html" class="cta">Log In</a>
-                <a href="index.html" class="cta">Back</a>
+            <div class="form-container">
+                <div class="successMessage"></div>
+                <form id="form">
+                    <div>
+                        <label>
+                            Email <span class="required">*</span>
+                            <input name="email" id="email" />
+                        </label>
+                        <div class="form-error" id="emailError">Please enter a valid email address</div>
+                    </div>
+                    <div>
+                        <label>
+                            Password <span class="required">*</span>
+                            <input name="password" id="password"></input>
+                        </label>
+                        <div class="form-error" id="passwordError">Please enter your password</div>
+                    </div>
+                    <button class="cta">Log In</button>
+                    <a href="index.html" class="cta">Back</a>
+                </form>
             </div>
         </main>
         <footer>
@@ -74,5 +85,6 @@
             <a href="https://www.youtube.com"><img src="icon/youtube.png" alt="Youtube" class="footer-icon" /></a>
             <p>Copyright &copy;</p>
         </footer>
+        <script src="js/login.js"></script>
     </body>
 </html>
