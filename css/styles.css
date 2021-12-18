@@ -4,116 +4,116 @@
 /* fonts and color */
 
 nav a {
-  font-family: var(--text-nav);
-  color: var(--color-main-blue);
+    font-family: var(--text-nav);
+    color: var(--color-main-blue);
 }
 
 h1,
 h2,
 h3 {
-  font-family: var(--text-heading);
-  color: var(--color-main-blue);
+    font-family: var(--text-heading);
+    color: var(--color-main-blue);
 }
 
 h3,
 p,
 main ul {
-  color: var(--color-text-grey);
+    color: var(--color-text-grey);
 }
 
 p,
 main ul,
 .cta,
 label {
-  font-family: var(--text-p-cta);
+    font-family: var(--text-p-cta);
 }
 
 /* body */
 
 body {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
 }
 
 /* header and nav */
 
 .logo img {
-  width: 180px;
-  padding: 20px;
+    width: 180px;
+    padding: 20px;
 }
 
 .logo {
-  text-align: center;
+    text-align: center;
 }
 
 .icon {
-  float: right;
+    float: right;
 }
 
 .icon a {
-  padding: 20px;
+    padding: 20px;
 }
 
 .hamburger-menu {
-  position: relative;
-  top: 8px;
+    position: relative;
+    top: 8px;
 }
 
 #hamburger-menu {
-  display: none;
-  padding-top: 40px;
+    display: none;
+    padding-top: 40px;
 }
 
 #hamburger-menu:checked ~ nav {
-  display: block;
+    display: block;
 }
 
 nav {
-  display: none;
-  position: absolute;
-  top: 212px;
-  background: var(--color-nav-mobile);
-  font-size: 1.8em;
-  z-index: 1000;
+    display: none;
+    position: absolute;
+    top: 212px;
+    background: var(--color-nav-mobile);
+    font-size: 1.8em;
+    z-index: 1000;
 }
 
 nav ul {
-  padding: 0px;
+    padding: 0px;
 }
 
 nav li {
-  display: block;
-  padding: 20px 30px;
+    display: block;
+    padding: 20px 30px;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 hr {
-  width: 100%;
-  height: 0.05em;
-  background: var(--color-main-blue);
-  margin: 20px 0px;
+    width: 100%;
+    height: 0.05em;
+    background: var(--color-main-blue);
+    margin: 20px 0px;
 }
 
 /* footer */
 
 footer {
-  display: flex;
-  justify-content: center;
-  background: var(--color-main-blue);
+    display: flex;
+    justify-content: center;
+    background: var(--color-main-blue);
 }
 
 .footer-icon {
-  padding: 20px;
-  width: 1.8em;
+    padding: 20px;
+    width: 1.8em;
 }
 
 footer p {
-  padding: 0px;
-  margin: 0px;
-  align-self: center;
-  color: white;
+    padding: 0px;
+    margin: 0px;
+    align-self: center;
+    color: white;
 }
