@@ -23,7 +23,7 @@ h1,
 }
 
 #form {
-    border: 2px solid lightgray;
+    border: 2px solid var(--color-main-blue);
     border-radius: 10px;
     padding: 2em;
 }

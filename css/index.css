@@ -48,7 +48,7 @@
     text-align: center;
     padding-bottom: 30px;
     margin: 20px;
-    border: 2px solid grey;
+    border: 2px solid var(--color-main-blue);
     border-radius: 10px;
 }
 
