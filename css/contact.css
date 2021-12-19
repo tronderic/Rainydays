@@ -19,6 +19,7 @@ h1,
 
 .form-container {
     max-width: 600px;
+    margin: 50px 0px;
 }
 
 #form {
@@ -51,4 +52,12 @@ button {
     border-radius: 10px;
     text-align: center;
     padding: 15px 0px;
+}
+
+.img img {
+    width: 100%;
+}
+
+.info {
+    margin-top: 50px;
 }

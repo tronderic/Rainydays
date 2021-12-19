@@ -100,7 +100,7 @@ hr {
 
 /* footer */
 
-footer {
+.footer {
     display: flex;
     justify-content: center;
     background: var(--color-main-blue);
@@ -111,9 +111,11 @@ footer {
     width: 1.8em;
 }
 
-footer p {
+.copyright p {
     padding: 0px;
     margin: 0px;
-    align-self: center;
     color: white;
+    background: var(--color-main-blue);
+    text-align: center;
+    padding-bottom: 10px;
 }
