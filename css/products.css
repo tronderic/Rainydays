@@ -1,21 +1,27 @@
+main {
+    margin: 0px 20px;
+}
+
 .products {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 20px;
-  margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0px auto;
 }
 
 .product img {
-  width: 100%;
+    width: 90%;
+    margin-top: 15px;
 }
 
 .product {
-  text-align: center;
-  padding-bottom: 0px;
+    text-align: center;
+    padding-bottom: 40px;
+    border: 2px solid var(--color-main-blue);
+    border-radius: 10px;
 }
 
 .cta-products {
-  text-align: center;
-  padding: 50px;
+    text-align: center;
+    padding: 50px;
 }
