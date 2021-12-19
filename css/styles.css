@@ -96,7 +96,7 @@ a {
 }
 
 hr {
-    width: 100%;
+    width: 99%;
     height: 0.05em;
     background: var(--color-main-blue);
     margin: 20px 0px;
