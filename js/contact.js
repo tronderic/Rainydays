@@ -34,7 +34,7 @@ function validateForm(event) {
     }
 
     if (validationPassed) {
-        successMessage.innerHTML = "<div id='successMessage'>Your request has been submitted</div>";
+        successMessage.innerHTML = "<div id='successMessage'>Your request have been submitted</div>";
     } else {
         successMessage.innerHTML = "";
     }
