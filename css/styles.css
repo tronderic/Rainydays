@@ -104,10 +104,13 @@ hr {
 
 /* footer */
 
+footer {
+    background: var(--color-main-blue);
+}
+
 .footer {
     display: flex;
     justify-content: center;
-    background: var(--color-main-blue);
 }
 
 .footer-icon {
@@ -119,7 +122,6 @@ hr {
     padding: 0px;
     margin: 0px;
     color: white;
-    background: var(--color-main-blue);
     text-align: center;
     padding-bottom: 10px;
 }
