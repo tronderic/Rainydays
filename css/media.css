@@ -38,13 +38,11 @@
     }
 
     .popular-items {
-        padding: 0px 12px;
         display: flex;
         justify-content: space-evenly;
     }
 
     .popular-items div {
-        text-align: center;
         padding-bottom: 50px;
         margin: 20px;
     }
@@ -55,11 +53,6 @@
 
     .header-popular {
         padding: 50px 0px 10px 0px;
-        text-align: center;
-    }
-
-    .login-cta {
-        display: none;
     }
 
     /* products.html */
