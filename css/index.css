@@ -7,8 +7,14 @@
     color: #ffffff;
     font-size: 2em;
     position: relative;
-    top: 120px;
+    top: 100px;
     text-align: center;
+}
+
+.gender {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .men {
@@ -32,6 +38,21 @@
     margin: 0px auto;
 }
 
-.featured {
-    display: none;
+.popular-items {
+    padding: 0px 12px;
+}
+
+.popular-items div {
+    text-align: center;
+    padding-bottom: 50px;
+    margin: 20px;
+}
+
+.popular-items img {
+    width: 80%;
+}
+
+.header-popular {
+    padding: 30px 0px 10px 0px;
+    text-align: center;
 }

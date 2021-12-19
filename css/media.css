@@ -17,6 +17,7 @@
 
     .gender {
         display: flex;
+        flex-direction: row;
         gap: 15px;
         margin: 0px 10px;
     }
