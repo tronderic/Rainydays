@@ -181,6 +181,13 @@
         max-width: 800px;
         margin: 0px auto;
     }
+
+    /* about.html */
+
+    main {
+        max-width: 600px;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 1200px) {
