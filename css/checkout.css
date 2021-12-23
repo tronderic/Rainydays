@@ -2,6 +2,10 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    margin-top: 50px;
+}
+
 .checkout {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -46,15 +50,13 @@ h1 {
 .item6 {
     grid-column: 3;
     grid-row: 2;
-    border: black solid 1px;
-    padding: 5px;
+    align-self: center;
 }
 
 .item7 {
     grid-column: 3;
     grid-row: 3;
-    border: black solid 1px;
-    padding: 5px;
+    align-self: center;
 }
 
 .item8 {
@@ -67,6 +69,10 @@ h1 {
     align-self: center;
 }
 
+.cost p {
+    text-align: right;
+}
+
 .form-error {
     display: none;
     padding: 0px;
@@ -74,8 +80,8 @@ h1 {
 }
 
 .form-container {
-    max-width: 600px;
-    margin: 50px 0px;
+    max-width: 400px;
+    margin: 20px 0px 50px;
 }
 
 #form,
