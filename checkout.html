@@ -77,16 +77,15 @@
             <div class="checkout-form">
                 <h2>Returning Customer</h2>
                     <div class="form-container">
-                        <div class="successMessage"></div>
                         <form id="form">
-                            <div>
+                            <div class="field">
                                 <label>
                                     Email <span class="required">*</span>
                                     <input name="email" id="email" />
                                 </label>
                                 <div class="form-error" id="emailError">Please enter a valid email address</div>
                             </div>
-                            <div>
+                            <div class="field">
                                 <label>
                                     Password <span class="required">*</span>
                                     <input name="password" id="password"></input>
@@ -99,59 +98,60 @@
                 <div>
                     <h2>New Customer</h2>
                     <div class="form-container">
-                        <div class="newSuccessMessage"></div>
                         <form id="newForm">
-                            <div>
+                            <div class="field">
                                 <label>
                                     First Name <span class="required">*</span>
                                     <input name="first-name" id="first-name" />
                                 </label>
                                 <div class="form-error" id="first-nameError">Please enter your first name</div>
                             </div>
-                            <div>
+                            <div class="field">
                                 <label>
                                     Last Name <span class="required">*</span>
                                     <input name="last-name" id="last-name" />
                                 </label>
                                 <div class="form-error" id="last-nameError">Please enter your last name</div>
                             </div>
-                            <div>
+                            <div class="field">
                                 <label>
                                     Address <span class="required">*</span>
                                     <input name="address" id="address" />
                                 </label>
                                 <div class="form-error" id="addressError">Please enter your address</div>
                             </div>
-                            <div>
+                            <div class="field">
                                 <label>
                                     City <span class="required">*</span>
                                     <input name="city" id="city" />
                                 </label>
                                 <div class="form-error" id="cityError">Please enter your city</div>
                             </div>
-                            <div>
+                            <div class="field">
                                 <label>
                                     Zip code <span class="required">*</span>
                                     <input name="zip" id="zip" />
                                 </label>
                                 <div class="form-error" id="zipError">Please enter your zip code</div>
                             </div>
-                            <div>
+                            <div class="field">
                                 <label>
                                     Email <span class="required">*</span>
                                     <input name="emailNew" id="emailNew" />
                                 </label>
                                 <div class="form-error" id="emailNewError">Please enter a valid email address</div>
                             </div>
-                            <div>
+                            <div class="field">
                                 <label>
                                     New Password <span class="required">*</span>
                                     <input name="newPassword" id="newPassword"></input>
                                 </label>
                                 <div class="form-error" id="newPasswordError">Please enter a new password</div>
                             </div>
-                            <button class="cta">Complete Order</button>
-                            <a href="product-page.html" class="cta">Back</a>
+                            <div class="buttons">
+                                <button class="cta">Complete Order</button>
+                                <a href="product-page.html" class="cta">Back</a>
+                            </div>
                         </form>
                     </div>   
                 </div>

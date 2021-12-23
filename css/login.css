@@ -7,7 +7,7 @@ h1 {
 }
 
 .cta {
-    margin: 0px 20px;
+    margin: 20px 20px 0 20px;
 }
 
 .form-error {
@@ -33,10 +33,6 @@ h1 {
 
 input {
     width: 100%;
-}
-
-.cta {
-    margin-top: 20px;
 }
 
 #successMessage {

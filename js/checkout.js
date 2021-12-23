@@ -5,7 +5,6 @@ const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
 const password = document.querySelector("#password");
 const passwordError = document.querySelector("#passwordError");
-const successMessage = document.querySelector(".successMessage");
 
 function validateForm(event) {
     event.preventDefault();
@@ -27,9 +26,7 @@ function validateForm(event) {
     }
 
     if (validationPassed) {
-        successMessage.innerHTML = "<div id='successMessage'>You have been successfully logged in</div>";
-    } else {
-        successMessage.innerHTML = "";
+        redirect();
     }
 }
 
@@ -57,10 +54,9 @@ const zipError = document.querySelector("#zipError");
 const emailNew = document.querySelector("#emailNew");
 const emailNewError = document.querySelector("#emailNewError");
 const newPassword = document.querySelector("#newPassword");
-const NewPasswordError = document.querySelector("#newPasswordError");
-const newSuccessMessage = document.querySelector(".newSuccessMessage");
+const newPasswordError = document.querySelector("#newPasswordError");
 
-function validateForm(event) {
+function validateNewForm(event) {
     event.preventDefault();
 
     let validationPassed = true;
@@ -107,17 +103,15 @@ function validateForm(event) {
         validationPassed = false;
     }
 
-    if (password.value.trim().length > 0) {
-        passwordError.style.display = "none";
+    if (newPassword.value.trim().length > 0) {
+        newPasswordError.style.display = "none";
     } else {
-        passwordError.style.display = "block";
+        newPasswordError.style.display = "block";
         validationPassed = false;
     }
 
     if (validationPassed) {
-        successMessage.innerHTML = "<div id='successMessage'>Your request has been submitted</div>";
-    } else {
-        successMessage.innerHTML = "";
+        redirect();
     }
 }
 
@@ -127,4 +121,8 @@ function validateNewEmail(emailNew) {
     return patternMatches;
 }
 
-newForm.addEventListener("submit", validateForm);
+function redirect() {
+    location.replace("../checkout-success.html");
+}
+
+newForm.addEventListener("submit", validateNewForm);
