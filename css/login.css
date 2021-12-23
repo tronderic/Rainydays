@@ -1,18 +1,48 @@
 main {
-  margin: 0px auto;
+    margin: 0px auto;
 }
 
-h1,
-main div {
-  text-align: center;
-}
-
-.form-login {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-bottom: 50px;
+h1 {
+    text-align: center;
 }
 
 .cta {
-  margin: 0px 20px;
+    margin: 0px 20px;
+}
+
+.form-error {
+    display: none;
+    padding: 0px;
+    color: red;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 50px 0px;
+}
+
+#form {
+    border: 2px solid var(--color-main-blue);
+    border-radius: 10px;
+    padding: 2em;
+}
+
+.field {
+    margin-top: 1rem;
+}
+
+input {
+    width: 100%;
+}
+
+.cta {
+    margin-top: 20px;
+}
+
+#successMessage {
+    background-color: lightgreen;
+    color: darkgreen;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px 0px;
 }
