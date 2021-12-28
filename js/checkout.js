@@ -126,3 +126,37 @@ function redirect() {
 }
 
 newForm.addEventListener("submit", validateNewForm);
+
+// Cart
+
+const queryString = document.location.search;
+
+const params = new URLSearchParams(queryString);
+
+const qty = params.get("quantity");
+
+const size = params.get("size");
+
+
+const total = document.querySelector(".total");
+
+const updatedQty = document.querySelector("#updatedQuantity");
+
+const updatedSize = document.querySelector("#updatedSize");
+
+
+updatedSize.value = size;
+
+
+updatedQty.value = qty;
+
+const totalCost = 52 * updatedQty.value + 7;
+
+total.innerHTML = `Total $ ${totalCost}`;
+
+updatedQty.onchange = function() {
+    const totalCost = 52 * updatedQty.value + 7;
+
+    console.log(totalCost);
+    total.innerHTML = `Total $ ${totalCost}`;
+  };
