@@ -47,6 +47,12 @@ main img {
   background: var(--color-cta-size-checked);
 }
 
+.s:hover,
+.m:hover,
+.l:hover {
+  background: var(--color-cta-hover);
+}
+
 .quantity {
   text-align: center;
 }
