@@ -4,130 +4,132 @@
 /* fonts and color */
 
 nav a {
-    font-family: var(--text-nav);
-    color: var(--color-main-blue);
+  font-family: var(--text-nav);
+  color: var(--color-main-blue);
 }
 
 h1,
 h2,
 h3 {
-    font-family: var(--text-heading);
-    color: var(--color-main-blue);
+  font-family: var(--text-heading);
+  color: var(--color-main-blue);
 }
 
 h3,
 p,
 main ul {
-    color: var(--color-text-grey);
+  color: var(--color-text-grey);
 }
 
 p,
 main ul,
 .cta,
 label {
-    font-family: var(--text-p-cta);
+  font-family: var(--text-p-cta);
 }
 
 /* body */
 
 body {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-    margin: 0px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  margin: 0px;
 }
 
 /* header and nav */
 
 .logo img {
-    width: 180px;
-    padding: 20px;
+  width: 180px;
+  padding: 20px;
 }
 
 .logo {
-    text-align: center;
-    margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .icon {
-    float: right;
+  float: right;
 }
 
 .icon a {
-    padding: 20px;
+  padding: 20px;
 }
 
 .hamburger-menu {
-    position: relative;
-    top: 8px;
-    margin-left: 20px;
-    margin-top: 0px;
+  position: relative;
+  top: 8px;
+  margin-left: 20px;
+  margin-top: 0px;
 }
 
 #hamburger-menu {
-    display: none;
-    padding-top: 40px;
+  display: none;
+  padding-top: 40px;
 }
 
 #hamburger-menu:checked ~ nav {
-    display: block;
+  display: block;
 }
 
 nav {
-    display: none;
-    position: absolute;
-    top: 218px;
-    background: var(--color-nav-mobile);
-    font-size: 1.8em;
-    z-index: 1000;
+  display: none;
+  position: absolute;
+  top: 218px;
+  background: var(--color-nav-mobile);
+  font-size: 1.8em;
+  z-index: 1000;
 }
 
 nav ul {
-    padding: 0px;
+  padding: 0px;
 }
 
 nav li {
-    display: block;
-    padding: 20px 30px;
+  display: block;
+  padding: 20px 30px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 hr {
-    width: 99%;
-    height: 0.05em;
-    background: var(--color-main-blue);
-    margin: 20px 0px;
+  width: 99%;
+  height: 0.05em;
+  background: var(--color-main-blue);
+  margin: 20px 0px;
 }
 
 /* main */
 
 main {
-    margin: 0px 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* footer */
 
 footer {
-    background: var(--color-main-blue);
+  background: var(--color-main-blue);
 }
 
 .footer {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-icon {
-    padding: 20px;
-    width: 1.8em;
+  padding: 20px;
+  width: 1.8em;
 }
 
 .copyright p {
-    padding: 0px;
-    margin: 0px;
-    color: white;
-    text-align: center;
-    padding-bottom: 10px;
+  padding: 0px;
+  margin: 0px;
+  color: white;
+  text-align: center;
+  padding-bottom: 10px;
 }

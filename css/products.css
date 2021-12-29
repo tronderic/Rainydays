@@ -1,24 +1,24 @@
 .products {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 20px;
-    margin: 0px auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  margin: 0px auto;
 }
 
 .product img {
-    width: 90%;
-    margin-top: 10px;
-    border-radius: 8px;
+  width: 90%;
+  margin-top: 10px;
+  border-radius: 8px;
 }
 
 .product {
-    text-align: center;
-    padding-bottom: 30px;
-    border: 2px solid var(--color-main-blue);
-    border-radius: 10px;
+  text-align: center;
+  padding-bottom: 30px;
+  border: 2px solid var(--color-main-blue);
+  border-radius: 10px;
 }
 
 .cta-products {
-    text-align: center;
-    padding: 50px;
+  text-align: center;
+  padding: 50px;
 }
