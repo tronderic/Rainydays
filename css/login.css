@@ -1,44 +1,49 @@
 main {
-    margin: 0px auto;
+  margin: 0px 20px;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 .cta {
-    margin: 20px 20px 0 20px;
+  margin: 20px 20px 0 20px;
 }
 
 .form-error {
-    display: none;
-    padding: 0px;
-    color: red;
+  display: none;
+  padding: 0px;
+  color: red;
 }
 
 .form-container {
-    max-width: 600px;
-    margin: 50px 0px;
+  max-width: 400px;
+  margin: 50px auto;
 }
 
 #form {
-    border: 2px solid var(--color-main-blue);
-    border-radius: 10px;
-    padding: 2em;
+  border: 2px solid var(--color-main-blue);
+  border-radius: 10px;
+  padding: 2em;
 }
 
 .field {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 input {
-    width: 100%;
+  width: 100%;
 }
 
 #successMessage {
-    background-color: lightgreen;
-    color: darkgreen;
-    border-radius: 10px;
-    text-align: center;
-    padding: 15px 0px;
+  background-color: lightgreen;
+  color: darkgreen;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px 0px;
+}
+
+.buttons {
+  margin: 0 auto;
+  text-align: center;
 }

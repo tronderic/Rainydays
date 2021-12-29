@@ -14,8 +14,8 @@ h1,
 }
 
 .form-container {
-  max-width: 600px;
-  margin: 50px 0px;
+  max-width: 400px;
+  margin: 50px auto;
 }
 
 #form {
@@ -51,10 +51,16 @@ button {
   padding: 15px 0px;
 }
 
+.img {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
 .img img {
   width: 100%;
 }
 
 .info {
   margin-top: 50px;
+  text-align: center;
 }
