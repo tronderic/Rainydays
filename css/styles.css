@@ -76,10 +76,11 @@ body {
 nav {
   display: none;
   position: absolute;
-  top: 218px;
+  top: 215px;
   background: var(--color-nav-mobile);
   font-size: 1.8em;
   z-index: 1000;
+  border: 2px solid var(--color-text-grey);
 }
 
 nav ul {
@@ -98,7 +99,7 @@ a {
 hr {
   width: 99%;
   height: 0.05em;
-  background: var(--color-main-blue);
+  background: var(--color-text-grey);
   margin: 20px 0px;
 }
 
