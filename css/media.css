@@ -198,6 +198,12 @@
   .login-form {
     margin: 50px auto;
   }
+
+  /* about.html */
+
+  .about-text {
+    max-width: 600px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -376,11 +382,5 @@
   .form-right {
     grid-column: 2;
     grid-row: 2;
-  }
-
-  /* about.html */
-
-  .about-text {
-    max-width: 600px;
   }
 }
