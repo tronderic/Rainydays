@@ -39,6 +39,11 @@ body {
 
 /* header and nav */
 
+header {
+  background: var(--color-main-blue);
+  padding-bottom: 10px;
+}
+
 .logo img {
   width: 180px;
   padding: 20px;
@@ -77,10 +82,10 @@ nav {
   display: none;
   position: absolute;
   top: 215px;
-  background: var(--color-nav-mobile);
   font-size: 1.8em;
   z-index: 1000;
   border: 2px solid var(--color-text-grey);
+  background: var(--color-nav-mobile);
 }
 
 nav ul {

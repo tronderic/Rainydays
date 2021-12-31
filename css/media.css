@@ -210,7 +210,6 @@
   /* nav */
 
   nav {
-    background: var(--color-nav-desktop);
     border: none;
   }
 
@@ -249,12 +248,17 @@
     top: auto;
     text-align: center;
     z-index: unset;
+    background: var(--color-main-blue);
   }
 
   nav li {
     padding: 0px 20px;
     font-size: 1em;
     display: inline-block;
+  }
+
+  nav a {
+    color: var(--color-nav-desktop);
   }
 
   .gender h2 {
