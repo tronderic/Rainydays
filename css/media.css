@@ -267,6 +267,10 @@
     color: var(--color-nav-desktop);
   }
 
+  nav a:hover {
+    text-decoration: underline;
+  }
+
   .gender h2 {
     top: 200px;
   }
