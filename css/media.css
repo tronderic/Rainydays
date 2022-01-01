@@ -94,6 +94,14 @@
     margin: 0px;
   }
 
+  .price-margin {
+    margin-bottom: 0;
+  }
+
+  .size-margin {
+    margin-top: 0;
+  }
+
   /* contact.html */
 
   .contact-container {
