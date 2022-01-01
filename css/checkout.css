@@ -29,6 +29,7 @@ h2 {
   grid-row: 2;
   color: var(--color-main-blue);
   justify-self: end;
+  align-self: center;
 }
 
 .item3 {
@@ -36,6 +37,7 @@ h2 {
   grid-row: 3;
   color: var(--color-main-blue);
   justify-self: end;
+  align-self: center;
 }
 
 .item4 {
