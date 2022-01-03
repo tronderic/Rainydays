@@ -97,7 +97,7 @@ header {
 nav {
   display: none;
   position: absolute;
-  top: 215px;
+  top: 201px;
   font-size: 1.8em;
   z-index: 1000;
   border: 2px solid var(--color-text-grey);
