@@ -242,10 +242,6 @@
     grid-column: 2;
   }
 
-  .logo img {
-    width: 350px;
-  }
-
   .icon {
     float: unset;
     text-align: end;
