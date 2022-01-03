@@ -63,11 +63,26 @@ header {
   padding: 20px;
 }
 
+.icon a img {
+  width: 30px;
+}
+
+.contact-icon {
+  position: relative;
+  top: 5px;
+}
+
 .hamburger-menu {
   position: relative;
   top: 8px;
   margin-left: 20px;
   margin-top: 0px;
+}
+
+.hamburger-menu img {
+  width: 30px;
+  position: relative;
+  top: 5px;
 }
 
 #hamburger-menu {
