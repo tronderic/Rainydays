@@ -1,231 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="The final step of your purchase" />
-    <title>RainyDays | Checkout</title>
-    <link href="css/styles.css" rel="stylesheet" />
-    <link href="css/checkout.css" rel="stylesheet" />
-    <link href="css/media.css" rel="stylesheet" />
-    <!-- Hotjar Tracking Code for https://elegant-neumann-3cdbdb.netlify.app/index.html -->
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 2699018, hjsv: 6 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
-  </head>
-  <body>
-    <header class="grey">
-      <div class="logo-grid">
-        <div class="logo">
-          <a href="index.html"
-            ><img src="images/rainydays-logo-white.png" alt="Logo"
-          /></a>
-        </div>
-        <div class="icon">
-          <a href="contact.html"
-            ><img
-              src="icon/contact-white.png"
-              class="contact-icon"
-              alt="Contact"
-          /></a>
-          <a href="login.html"
-            ><img src="icon/login-white.png" alt="Log In"
-          /></a>
-          <a href="checkout.html"
-            ><img src="icon/checkout-white.png" alt="Cart"
-          /></a>
-        </div>
-      </div>
-      <div>
-        <label for="hamburger-menu" class="hamburger-menu"
-          ><img src="icon/icon-material-menu@2x-white.png" alt="hamburger"
-        /></label>
-        <input type="checkbox" id="hamburger-menu" />
-        <nav>
-          <ul>
-            <li><a href="products.html">Coats</a></li>
-            <li><a href="products.html">Down Jackets</a></li>
-            <li><a href="products.html">Leather Jackets</a></li>
-            <li><a href="products.html">Casual Jackets</a></li>
-            <li><a href="about.html">About Us</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section>
-        <h1>Checkout</h1>
-        <div class="checkout">
-          <img src="images/checkout.jpg" alt="product item" class="item" />
-          <p class="item1">Item</p>
-          <label for="updatedSize" class="item2">Size</label>
-          <label for="updatedQuantity" class="item3">Quantity</label>
-          <p class="item4">Price</p>
-          <p class="item5">Down Jacket</p>
-          <div class="item6">
-            <select id="updatedSize">
-              <option value="s">S</option>
-              <option value="m">M</option>
-              <option value="l">L</option>
-            </select>
-          </div>
-          <div class="item7">
-            <select id="updatedQuantity">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-              <option>7</option>
-              <option>8</option>
-              <option>9</option>
-            </select>
-          </div>
-          <p class="item8">$ 52</p>
-        </div>
-        <div class="cost">
-          <p>Shipping $ 7</p>
-          <p class="total">Total $ 59</p>
-        </div>
-      </section>
-      <section class="lower-section">
-        <div class="checkout-form">
-          <h2 class="checkout-1">Returning Customer</h2>
-          <div class="form-container center form-left">
-            <form id="form">
-              <div class="field">
-                <label for="email">
-                  Email <span class="required">*</span>
-                  <input name="email" id="email" />
-                </label>
-                <div class="form-error" id="emailError">
-                  Please enter a valid email address
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="The final step of your purchase" />
+        <title>RainyDays | Checkout</title>
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/checkout.css" rel="stylesheet" />
+        <link href="css/media.css" rel="stylesheet" />
+        <!-- Hotjar Tracking Code for https://elegant-neumann-3cdbdb.netlify.app/index.html -->
+        <script>
+            (function (h, o, t, j, a, r) {
+                h.hj =
+                    h.hj ||
+                    function () {
+                        (h.hj.q = h.hj.q || []).push(arguments);
+                    };
+                h._hjSettings = { hjid: 2699018, hjsv: 6 };
+                a = o.getElementsByTagName("head")[0];
+                r = o.createElement("script");
+                r.async = 1;
+                r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+        </script>
+    </head>
+    <body>
+        <header class="grey">
+            <div class="logo-grid">
+                <div class="logo">
+                    <a href="index.html"><img src="images/rainydays-logo-white.png" alt="Logo" /></a>
                 </div>
-              </div>
-              <div class="field">
-                <label for="password">
-                  Password <span class="required">*</span>
-                  <input name="password" id="password" />
-                </label>
-                <div class="form-error" id="passwordError">
-                  Please enter your password
+                <div class="icon">
+                    <a href="login.html"><img src="icon/login-white.png" alt="Log In" /></a>
+                    <a href="checkout.html"><img src="icon/checkout-white.png" alt="Cart" /></a>
                 </div>
-              </div>
-              <button class="button cta">Complete Order</button>
-            </form>
-          </div>
-          <h2 class="checkout-2">New Customer</h2>
-          <div class="form-container center form-right">
-            <form id="newForm">
-              <div class="field">
-                <label for="first-name">
-                  First Name <span class="required">*</span>
-                  <input name="first-name" id="first-name" />
-                </label>
-                <div class="form-error" id="first-nameError">
-                  Please enter your first name
+            </div>
+            <div>
+                <label for="hamburger-menu" class="hamburger-menu"><img src="icon/icon-material-menu@2x-white.png" alt="hamburger" /></label>
+                <input type="checkbox" id="hamburger-menu" />
+                <nav>
+                    <ul>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section>
+                <h1>Checkout</h1>
+                <div class="checkout">
+                    <img src="images/checkout.jpg" alt="product item" class="item" />
+                    <p class="item1">Item</p>
+                    <label for="updatedSize" class="item2">Size</label>
+                    <label for="updatedQuantity" class="item3">Quantity</label>
+                    <p class="item4">Price</p>
+                    <p class="item5">Down Jacket</p>
+                    <div class="item6">
+                        <select id="updatedSize">
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                        </select>
+                    </div>
+                    <div class="item7">
+                        <select id="updatedQuantity">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                        </select>
+                    </div>
+                    <p class="item8">$ 52</p>
                 </div>
-              </div>
-              <div class="field">
-                <label for="last-name">
-                  Last Name <span class="required">*</span>
-                  <input name="last-name" id="last-name" />
-                </label>
-                <div class="form-error" id="last-nameError">
-                  Please enter your last name
+                <div class="cost">
+                    <p>Shipping $ 7</p>
+                    <p class="total">Total $ 59</p>
                 </div>
-              </div>
-              <div class="field">
-                <label for="address">
-                  Address <span class="required">*</span>
-                  <input name="address" id="address" />
-                </label>
-                <div class="form-error" id="addressError">
-                  Please enter your address
+            </section>
+            <section class="lower-section">
+                <div class="checkout-form">
+                    <h2 class="checkout-1">Returning Customer</h2>
+                    <div class="form-container center form-left">
+                        <form id="form">
+                            <div class="field">
+                                <label for="email">
+                                    Email <span class="required">*</span>
+                                    <input name="email" id="email" />
+                                </label>
+                                <div class="form-error" id="emailError">Please enter a valid email address</div>
+                            </div>
+                            <div class="field">
+                                <label for="password">
+                                    Password <span class="required">*</span>
+                                    <input name="password" id="password" />
+                                </label>
+                                <div class="form-error" id="passwordError">Please enter your password</div>
+                            </div>
+                            <button class="button cta">Complete Order</button>
+                        </form>
+                    </div>
+                    <h2 class="checkout-2">New Customer</h2>
+                    <div class="form-container center form-right">
+                        <form id="newForm">
+                            <div class="field">
+                                <label for="first-name">
+                                    First Name <span class="required">*</span>
+                                    <input name="first-name" id="first-name" />
+                                </label>
+                                <div class="form-error" id="first-nameError">Please enter your first name</div>
+                            </div>
+                            <div class="field">
+                                <label for="last-name">
+                                    Last Name <span class="required">*</span>
+                                    <input name="last-name" id="last-name" />
+                                </label>
+                                <div class="form-error" id="last-nameError">Please enter your last name</div>
+                            </div>
+                            <div class="field">
+                                <label for="address">
+                                    Address <span class="required">*</span>
+                                    <input name="address" id="address" />
+                                </label>
+                                <div class="form-error" id="addressError">Please enter your address</div>
+                            </div>
+                            <div class="field">
+                                <label for="city">
+                                    City <span class="required">*</span>
+                                    <input name="city" id="city" />
+                                </label>
+                                <div class="form-error" id="cityError">Please enter your city</div>
+                            </div>
+                            <div class="field">
+                                <label for="zip">
+                                    Zip code <span class="required">*</span>
+                                    <input name="zip" id="zip" />
+                                </label>
+                                <div class="form-error" id="zipError">Please enter your zip code</div>
+                            </div>
+                            <div class="field">
+                                <label for="emailNew">
+                                    Email <span class="required">*</span>
+                                    <input name="emailNew" id="emailNew" />
+                                </label>
+                                <div class="form-error" id="emailNewError">Please enter a valid email address</div>
+                            </div>
+                            <div class="field">
+                                <label for="newPassword">
+                                    New Password <span class="required">*</span>
+                                    <input name="newPassword" id="newPassword" />
+                                </label>
+                                <div class="form-error" id="newPasswordError">Please enter a new password</div>
+                            </div>
+                            <div class="buttons">
+                                <button class="cta">Complete Order</button>
+                                <a href="product-page.html" class="cta">Back</a>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-              </div>
-              <div class="field">
-                <label for="city">
-                  City <span class="required">*</span>
-                  <input name="city" id="city" />
-                </label>
-                <div class="form-error" id="cityError">
-                  Please enter your city
-                </div>
-              </div>
-              <div class="field">
-                <label for="zip">
-                  Zip code <span class="required">*</span>
-                  <input name="zip" id="zip" />
-                </label>
-                <div class="form-error" id="zipError">
-                  Please enter your zip code
-                </div>
-              </div>
-              <div class="field">
-                <label for="emailNew">
-                  Email <span class="required">*</span>
-                  <input name="emailNew" id="emailNew" />
-                </label>
-                <div class="form-error" id="emailNewError">
-                  Please enter a valid email address
-                </div>
-              </div>
-              <div class="field">
-                <label for="newPassword">
-                  New Password <span class="required">*</span>
-                  <input name="newPassword" id="newPassword" />
-                </label>
-                <div class="form-error" id="newPasswordError">
-                  Please enter a new password
-                </div>
-              </div>
-              <div class="buttons">
-                <button class="cta">Complete Order</button>
-                <a href="product-page.html" class="cta">Back</a>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footer">
-        <a href="https://www.facebook.com"
-          ><img src="icon/facebook.png" alt="Facebook" class="footer-icon"
-        /></a>
-        <a href="https://www.instagram.com"
-          ><img src="icon/instagram.png" alt="Instagram" class="footer-icon"
-        /></a>
-        <a href="https://www.twitter.com"
-          ><img src="icon/twitter.png" alt="Twitter" class="footer-icon"
-        /></a>
-        <a href="https://www.youtube.com"
-          ><img src="icon/youtube.png" alt="Youtube" class="footer-icon"
-        /></a>
-      </div>
-      <div class="copyright">
-        <p>Copyright &copy;</p>
-      </div>
-    </footer>
-    <script src="js/checkout.js"></script>
-  </body>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <a href="https://www.facebook.com"><img src="icon/facebook.png" alt="Facebook" class="footer-icon" /></a>
+                <a href="https://www.instagram.com"><img src="icon/instagram.png" alt="Instagram" class="footer-icon" /></a>
+                <a href="https://www.twitter.com"><img src="icon/twitter.png" alt="Twitter" class="footer-icon" /></a>
+                <a href="https://www.youtube.com"><img src="icon/youtube.png" alt="Youtube" class="footer-icon" /></a>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy;</p>
+            </div>
+        </footer>
+        <script src="js/checkout.js"></script>
+    </body>
 </html>
