@@ -13,7 +13,7 @@ async function retrieveProducts(url) {
           <img src="${product.images[0].src}" alt="Jacket" />
           <h3>${product.name}</h3>
           <p>${product.price_html}</p>
-          <a href="product-page.html" class="cta">View</a>
+          <a href="product-page.html?=${product.id}" class="cta">View</a>
         </div>`;
     });
 }
