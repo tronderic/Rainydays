@@ -36,3 +36,8 @@ quantity.onchange = function () {
 
     totalPrice.innerHTML = `$${total}`;
 };
+
+// adding id query string to form
+
+let form = document.querySelector("#productId");
+form.value += id;
