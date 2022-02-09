@@ -1,3 +1,27 @@
+// fetching query string id
+
+const newQueryString = document.location.search;
+const newParams = new URLSearchParams(newQueryString);
+const id = newParams.get("id");
+const url = `https://rainydays.aadnoywebdev.one/wp-json/wc/store/products/${id}`;
+
+// adding product details
+
+async function product(url) {
+    const data = await fetch(url);
+    const product = await data.json();
+
+    const img = document.querySelector(".item");
+    const item = document.querySelector(".item5");
+    const price = document.querySelector(".item8");
+
+    img.src = product.images[0].src;
+    item.innerHTML = product.name;
+    price.innerHTML = product.price_html;
+}
+
+product(url);
+
 // Returning Customer
 
 const form = document.querySelector("#form");
@@ -7,33 +31,33 @@ const password = document.querySelector("#password");
 const passwordError = document.querySelector("#passwordError");
 
 function validateForm(event) {
-  event.preventDefault();
+    event.preventDefault();
 
-  let validationPassed = true;
+    let validationPassed = true;
 
-  if (validateEmail(email.value)) {
-    emailError.style.display = "none";
-  } else {
-    emailError.style.display = "block";
-    validationPassed = false;
-  }
+    if (validateEmail(email.value)) {
+        emailError.style.display = "none";
+    } else {
+        emailError.style.display = "block";
+        validationPassed = false;
+    }
 
-  if (password.value.trim().length > 0) {
-    passwordError.style.display = "none";
-  } else {
-    passwordError.style.display = "block";
-    validationPassed = false;
-  }
+    if (password.value.trim().length > 0) {
+        passwordError.style.display = "none";
+    } else {
+        passwordError.style.display = "block";
+        validationPassed = false;
+    }
 
-  if (validationPassed) {
-    redirect();
-  }
+    if (validationPassed) {
+        redirect();
+    }
 }
 
 function validateEmail(email) {
-  const regEx = /\S+@\S+\.\S+/;
-  const patternMatches = regEx.test(email);
-  return patternMatches;
+    const regEx = /\S+@\S+\.\S+/;
+    const patternMatches = regEx.test(email);
+    return patternMatches;
 }
 
 form.addEventListener("submit", validateForm);
@@ -57,72 +81,72 @@ const newPassword = document.querySelector("#newPassword");
 const newPasswordError = document.querySelector("#newPasswordError");
 
 function validateNewForm(event) {
-  event.preventDefault();
+    event.preventDefault();
 
-  let validationPassed = true;
+    let validationPassed = true;
 
-  if (firstName.value.trim().length > 0) {
-    firstNameError.style.display = "none";
-  } else {
-    firstNameError.style.display = "block";
-    validationPassed = false;
-  }
+    if (firstName.value.trim().length > 0) {
+        firstNameError.style.display = "none";
+    } else {
+        firstNameError.style.display = "block";
+        validationPassed = false;
+    }
 
-  if (lastName.value.trim().length > 0) {
-    lastNameError.style.display = "none";
-  } else {
-    lastNameError.style.display = "block";
-    validationPassed = false;
-  }
+    if (lastName.value.trim().length > 0) {
+        lastNameError.style.display = "none";
+    } else {
+        lastNameError.style.display = "block";
+        validationPassed = false;
+    }
 
-  if (address.value.trim().length > 0) {
-    addressError.style.display = "none";
-  } else {
-    addressError.style.display = "block";
-    validationPassed = false;
-  }
+    if (address.value.trim().length > 0) {
+        addressError.style.display = "none";
+    } else {
+        addressError.style.display = "block";
+        validationPassed = false;
+    }
 
-  if (city.value.trim().length > 0) {
-    cityError.style.display = "none";
-  } else {
-    cityError.style.display = "block";
-    validationPassed = false;
-  }
+    if (city.value.trim().length > 0) {
+        cityError.style.display = "none";
+    } else {
+        cityError.style.display = "block";
+        validationPassed = false;
+    }
 
-  if (zip.value.trim().length > 0) {
-    zipError.style.display = "none";
-  } else {
-    zipError.style.display = "block";
-    validationPassed = false;
-  }
+    if (zip.value.trim().length > 0) {
+        zipError.style.display = "none";
+    } else {
+        zipError.style.display = "block";
+        validationPassed = false;
+    }
 
-  if (validateNewEmail(emailNew.value)) {
-    emailNewError.style.display = "none";
-  } else {
-    emailNewError.style.display = "block";
-    validationPassed = false;
-  }
+    if (validateNewEmail(emailNew.value)) {
+        emailNewError.style.display = "none";
+    } else {
+        emailNewError.style.display = "block";
+        validationPassed = false;
+    }
 
-  if (newPassword.value.trim().length > 0) {
-    newPasswordError.style.display = "none";
-  } else {
-    newPasswordError.style.display = "block";
-    validationPassed = false;
-  }
+    if (newPassword.value.trim().length > 0) {
+        newPasswordError.style.display = "none";
+    } else {
+        newPasswordError.style.display = "block";
+        validationPassed = false;
+    }
 
-  if (validationPassed) {
-    redirect();
-  }
+    if (validationPassed) {
+        redirect();
+    }
 }
 
 function validateNewEmail(emailNew) {
-  const regEx = /\S+@\S+\.\S+/;
-  const patternMatches = regEx.test(emailNew);
-  return patternMatches;
+    const regEx = /\S+@\S+\.\S+/;
+    const patternMatches = regEx.test(emailNew);
+    return patternMatches;
 }
 
 function redirect() {
-  location.replace("../checkout-success.html");
+    location.replace("../checkout-success.html");
 }
 
 newForm.addEventListener("submit", validateNewForm);
@@ -152,8 +176,8 @@ const totalCost = 52 * updatedQty.value + 7;
 total.innerHTML = `Total $ ${totalCost}`;
 
 updatedQty.onchange = function () {
-  const totalCost = 52 * updatedQty.value + 7;
+    const totalCost = 52 * updatedQty.value + 7;
 
-  console.log(totalCost);
-  total.innerHTML = `Total $ ${totalCost}`;
+    console.log(totalCost);
+    total.innerHTML = `Total $ ${totalCost}`;
 };
