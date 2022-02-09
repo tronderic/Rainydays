@@ -7,13 +7,13 @@ const url = `https://rainydays.aadnoywebdev.one/wp-json/wc/store/products/${id}`
 
 // adding product details
 
+const img = document.querySelector(".item");
+const item = document.querySelector(".item5");
+const price = document.querySelector(".item8");
+
 async function product(url) {
     const data = await fetch(url);
     const product = await data.json();
-
-    const img = document.querySelector(".item");
-    const item = document.querySelector(".item5");
-    const price = document.querySelector(".item8");
 
     img.src = product.images[0].src;
     item.innerHTML = product.name;
@@ -171,12 +171,12 @@ updatedSize.value = size;
 
 updatedQty.value = qty;
 
-const totalCost = 52 * updatedQty.value + 7;
+const totalCost = price * updatedQty.value + 7;
 
 total.innerHTML = `Total $ ${totalCost}`;
 
 updatedQty.onchange = function () {
-    const totalCost = 52 * updatedQty.value + 7;
+    const totalCost = price * updatedQty.value + 7;
 
     console.log(totalCost);
     total.innerHTML = `Total $ ${totalCost}`;
