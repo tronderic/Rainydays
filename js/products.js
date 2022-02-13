@@ -13,8 +13,6 @@ async function retrieveProducts(url) {
     const data = await fetch(url);
     const products = await data.json();
 
-    /* console.log(products.categories.name); */
-
     function addProducts(products) {
         container.innerHTML = "";
         products.forEach(function (product) {
