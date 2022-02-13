@@ -17,7 +17,39 @@ async function product(url) {
 
     img.src = product.images[0].src;
     item.innerHTML = product.name;
-    price.innerHTML = product.price_html;
+    const updatedPrice = product.prices.price / 100;
+    price.innerHTML = updatedPrice;
+
+    // Cart
+
+    const queryString = document.location.search;
+
+    const params = new URLSearchParams(queryString);
+
+    const qty = params.get("quantity");
+
+    const size = params.get("size");
+
+    const total = document.querySelector(".total");
+
+    const updatedQty = document.querySelector("#updatedQuantity");
+
+    const updatedSize = document.querySelector("#updatedSize");
+
+    updatedSize.value = size;
+
+    updatedQty.value = qty;
+
+    const totalCost = price.innerHTML * updatedQty.value + 7;
+
+    total.innerHTML = `Total $ ${totalCost}`;
+
+    updatedQty.onchange = function () {
+        const totalCost = price.innerHTML * updatedQty.value + 7;
+
+        console.log(totalCost);
+        total.innerHTML = `Total $ ${totalCost}`;
+    };
 }
 
 product(url);
@@ -150,34 +182,3 @@ function redirect() {
 }
 
 newForm.addEventListener("submit", validateNewForm);
-
-// Cart
-
-const queryString = document.location.search;
-
-const params = new URLSearchParams(queryString);
-
-const qty = params.get("quantity");
-
-const size = params.get("size");
-
-const total = document.querySelector(".total");
-
-const updatedQty = document.querySelector("#updatedQuantity");
-
-const updatedSize = document.querySelector("#updatedSize");
-
-updatedSize.value = size;
-
-updatedQty.value = qty;
-
-const totalCost = price * updatedQty.value + 7;
-
-total.innerHTML = `Total $ ${totalCost}`;
-
-updatedQty.onchange = function () {
-    const totalCost = price * updatedQty.value + 7;
-
-    console.log(totalCost);
-    total.innerHTML = `Total $ ${totalCost}`;
-};
