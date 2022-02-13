@@ -4,8 +4,9 @@ const container = document.querySelector(".popular-items");
 async function retrieveProducts(url) {
     const data = await fetch(url);
     const products = await data.json();
-
-    console.log(products[0]);
+    const gender = document.querySelector(".gender");
+    gender.innerHTML = `<a href="products.html?category=Men" class="men"><h2>Men's</h2></a>
+                        <a href="products.html?category=Women" class="women"><h2>Women's</h2></a>`;
 
     products.forEach((product) => {
         container.innerHTML += `
