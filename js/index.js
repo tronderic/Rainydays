@@ -8,7 +8,7 @@ async function retrieveProducts(url) {
     const gender = document.querySelector(".gender");
     gender.innerHTML = `<a href="products.html?category=Men" class="men"><h2>Men's</h2></a>
                         <a href="products.html?category=Women" class="women"><h2>Women's</h2></a>`;
-    spinner.style.display("none");
+    spinner.style.display = "none";
 
     products.forEach((product) => {
         container.innerHTML += `

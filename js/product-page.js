@@ -4,6 +4,7 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 const url = `https://rainydays.aadnoywebdev.one/wp-json/wc/store/products/${id}`;
+const spinner = document.querySelector(".loader");
 
 async function product(url) {
     const data = await fetch(url);
@@ -19,6 +20,7 @@ async function product(url) {
     productDetails.innerHTML += `<h1>${product.name}</h1>
                                   <p>${product.description}</p>
                                   <p class="price price-margin">${product.price_html}</p>`;
+    spinner.style.display = "none";
 }
 
 product(url);

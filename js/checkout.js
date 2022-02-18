@@ -4,6 +4,7 @@ const newQueryString = document.location.search;
 const newParams = new URLSearchParams(newQueryString);
 const id = newParams.get("id");
 const url = `https://rainydays.aadnoywebdev.one/wp-json/wc/store/products/${id}`;
+const spinner = document.querySelector(".loader");
 
 // adding product details
 
@@ -50,6 +51,8 @@ async function product(url) {
         console.log(totalCost);
         total.innerHTML = `Total $ ${totalCost}`;
     };
+
+    spinner.style.display = "none";
 }
 
 product(url);

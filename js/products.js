@@ -8,10 +8,12 @@ const baseUrl = "https://rainydays.aadnoywebdev.one/wp-json/wc/store/products?pe
 const menUrl = "https://rainydays.aadnoywebdev.one/wp-json/wc/store/products";
 const womanUrl = "https://rainydays.aadnoywebdev.one/product-category/women/";
 const container = document.querySelector(".products");
+const spinner = document.querySelector(".loader");
 
 async function retrieveProducts(url) {
     const data = await fetch(url);
     const products = await data.json();
+    spinner.style.display = "none";
 
     function addProducts(products) {
         container.innerHTML = "";
